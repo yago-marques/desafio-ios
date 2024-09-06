@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFE3FD3F2C81402E00A4B9EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FD3E2C81402E00A4B9EC /* AppDelegate.swift */; };
+		DFE3FD412C81402E00A4B9EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FD402C81402E00A4B9EC /* SceneDelegate.swift */; };
+		DFE3FD482C81402F00A4B9EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE3FD472C81402F00A4B9EC /* Assets.xcassets */; };
+		DFE3FD562C81402F00A4B9EC /* CoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FD552C81402F00A4B9EC /* CoraTests.swift */; };
+		DFE3FD602C81402F00A4B9EC /* CoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FD5F2C81402F00A4B9EC /* CoraUITests.swift */; };
+		DFE3FD622C81402F00A4B9EC /* CoraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FD612C81402F00A4B9EC /* CoraUITestsLaunchTests.swift */; };
+		DFE3FD922C81419300A4B9EC /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FD912C81419300A4B9EC /* Networking.framework */; };
+		DFE3FD932C81419300A4B9EC /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FD912C81419300A4B9EC /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FE132C81633E00A4B9EC /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FE122C81633E00A4B9EC /* Login.framework */; };
+		DFE3FE142C81633E00A4B9EC /* Login.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FE122C81633E00A4B9EC /* Login.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FE702C81EB6000A4B9EC /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FE6F2C81EB6000A4B9EC /* Coordinator.framework */; };
+		DFE3FE712C81EB6000A4B9EC /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FE6F2C81EB6000A4B9EC /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FEB42C824F3C00A4B9EC /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FEB32C824F3C00A4B9EC /* Storage.framework */; };
+		DFE3FEB52C824F3C00A4B9EC /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FEB32C824F3C00A4B9EC /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FED02C825A0800A4B9EC /* EnvironmentHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FECF2C825A0800A4B9EC /* EnvironmentHelper.framework */; };
+		DFE3FED12C825A0800A4B9EC /* EnvironmentHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FECF2C825A0800A4B9EC /* EnvironmentHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FF1B2C83687600A4B9EC /* Statements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FF1A2C83687600A4B9EC /* Statements.framework */; };
+		DFE3FF1C2C83687600A4B9EC /* Statements.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FF1A2C83687600A4B9EC /* Statements.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFE3FD522C81402F00A4B9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE3FD332C81402E00A4B9EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE3FD3A2C81402E00A4B9EC;
+			remoteInfo = Cora;
+		};
+		DFE3FD5C2C81402F00A4B9EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFE3FD332C81402E00A4B9EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFE3FD3A2C81402E00A4B9EC;
+			remoteInfo = Cora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFE3FD942C81419300A4B9EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFE3FED12C825A0800A4B9EC /* EnvironmentHelper.framework in Embed Frameworks */,
+				DFE3FE142C81633E00A4B9EC /* Login.framework in Embed Frameworks */,
+				DFE3FE712C81EB6000A4B9EC /* Coordinator.framework in Embed Frameworks */,
+				DFE3FEB52C824F3C00A4B9EC /* Storage.framework in Embed Frameworks */,
+				DFE3FF1C2C83687600A4B9EC /* Statements.framework in Embed Frameworks */,
+				DFE3FD932C81419300A4B9EC /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DFE3FD3B2C81402E00A4B9EC /* Cora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FD3E2C81402E00A4B9EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFE3FD402C81402E00A4B9EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DFE3FD472C81402F00A4B9EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFE3FD4C2C81402F00A4B9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE3FD512C81402F00A4B9EC /* CoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FD552C81402F00A4B9EC /* CoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoraTests.swift; sourceTree = "<group>"; };
+		DFE3FD5B2C81402F00A4B9EC /* CoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FD5F2C81402F00A4B9EC /* CoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoraUITests.swift; sourceTree = "<group>"; };
+		DFE3FD612C81402F00A4B9EC /* CoraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFE3FD912C81419300A4B9EC /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FDAE2C814C4C00A4B9EC /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		DFE3FDB32C814DB500A4B9EC /* HML.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HML.xcconfig; sourceTree = "<group>"; };
+		DFE3FDB42C814DC000A4B9EC /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
+		DFE3FE122C81633E00A4B9EC /* Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FE6F2C81EB6000A4B9EC /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FEB32C824F3C00A4B9EC /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FECF2C825A0800A4B9EC /* EnvironmentHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EnvironmentHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FF1A2C83687600A4B9EC /* Statements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Statements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFE3FD382C81402E00A4B9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE3FED02C825A0800A4B9EC /* EnvironmentHelper.framework in Frameworks */,
+				DFE3FE132C81633E00A4B9EC /* Login.framework in Frameworks */,
+				DFE3FE702C81EB6000A4B9EC /* Coordinator.framework in Frameworks */,
+				DFE3FEB42C824F3C00A4B9EC /* Storage.framework in Frameworks */,
+				DFE3FF1B2C83687600A4B9EC /* Statements.framework in Frameworks */,
+				DFE3FD922C81419300A4B9EC /* Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3FD4E2C81402F00A4B9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3FD582C81402F00A4B9EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFE3FD322C81402E00A4B9EC = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD3D2C81402E00A4B9EC /* Cora */,
+				DFE3FD542C81402F00A4B9EC /* CoraTests */,
+				DFE3FD5E2C81402F00A4B9EC /* CoraUITests */,
+				DFE3FD3C2C81402E00A4B9EC /* Products */,
+				DFE3FD902C81419300A4B9EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE3FD3C2C81402E00A4B9EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD3B2C81402E00A4B9EC /* Cora.app */,
+				DFE3FD512C81402F00A4B9EC /* CoraTests.xctest */,
+				DFE3FD5B2C81402F00A4B9EC /* CoraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFE3FD3D2C81402E00A4B9EC /* Cora */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FDE92C8160DD00A4B9EC /* Resource */,
+				DFE3FDE82C81601E00A4B9EC /* Application */,
+				DFE3FDAD2C814C3900A4B9EC /* Config */,
+				DFE3FD4C2C81402F00A4B9EC /* Info.plist */,
+			);
+			path = Cora;
+			sourceTree = "<group>";
+		};
+		DFE3FD542C81402F00A4B9EC /* CoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD552C81402F00A4B9EC /* CoraTests.swift */,
+			);
+			path = CoraTests;
+			sourceTree = "<group>";
+		};
+		DFE3FD5E2C81402F00A4B9EC /* CoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD5F2C81402F00A4B9EC /* CoraUITests.swift */,
+				DFE3FD612C81402F00A4B9EC /* CoraUITestsLaunchTests.swift */,
+			);
+			path = CoraUITests;
+			sourceTree = "<group>";
+		};
+		DFE3FD902C81419300A4B9EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FF1A2C83687600A4B9EC /* Statements.framework */,
+				DFE3FECF2C825A0800A4B9EC /* EnvironmentHelper.framework */,
+				DFE3FEB32C824F3C00A4B9EC /* Storage.framework */,
+				DFE3FE6F2C81EB6000A4B9EC /* Coordinator.framework */,
+				DFE3FE122C81633E00A4B9EC /* Login.framework */,
+				DFE3FD912C81419300A4B9EC /* Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFE3FDAD2C814C3900A4B9EC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FDAE2C814C4C00A4B9EC /* DEV.xcconfig */,
+				DFE3FDB32C814DB500A4B9EC /* HML.xcconfig */,
+				DFE3FDB42C814DC000A4B9EC /* PROD.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		DFE3FDE82C81601E00A4B9EC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD3E2C81402E00A4B9EC /* AppDelegate.swift */,
+				DFE3FD402C81402E00A4B9EC /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DFE3FDE92C8160DD00A4B9EC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD472C81402F00A4B9EC /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFE3FD3A2C81402E00A4B9EC /* Cora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE3FD652C81402F00A4B9EC /* Build configuration list for PBXNativeTarget "Cora" */;
+			buildPhases = (
+				DFE3FD372C81402E00A4B9EC /* Sources */,
+				DFE3FD382C81402E00A4B9EC /* Frameworks */,
+				DFE3FD392C81402E00A4B9EC /* Resources */,
+				DFE3FD942C81419300A4B9EC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cora;
+			productName = Cora;
+			productReference = DFE3FD3B2C81402E00A4B9EC /* Cora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFE3FD502C81402F00A4B9EC /* CoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE3FD682C81402F00A4B9EC /* Build configuration list for PBXNativeTarget "CoraTests" */;
+			buildPhases = (
+				DFE3FD4D2C81402F00A4B9EC /* Sources */,
+				DFE3FD4E2C81402F00A4B9EC /* Frameworks */,
+				DFE3FD4F2C81402F00A4B9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE3FD532C81402F00A4B9EC /* PBXTargetDependency */,
+			);
+			name = CoraTests;
+			productName = CoraTests;
+			productReference = DFE3FD512C81402F00A4B9EC /* CoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFE3FD5A2C81402F00A4B9EC /* CoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFE3FD6B2C81402F00A4B9EC /* Build configuration list for PBXNativeTarget "CoraUITests" */;
+			buildPhases = (
+				DFE3FD572C81402F00A4B9EC /* Sources */,
+				DFE3FD582C81402F00A4B9EC /* Frameworks */,
+				DFE3FD592C81402F00A4B9EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFE3FD5D2C81402F00A4B9EC /* PBXTargetDependency */,
+			);
+			name = CoraUITests;
+			productName = CoraUITests;
+			productReference = DFE3FD5B2C81402F00A4B9EC /* CoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFE3FD332C81402E00A4B9EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					DFE3FD3A2C81402E00A4B9EC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					DFE3FD502C81402F00A4B9EC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DFE3FD3A2C81402E00A4B9EC;
+					};
+					DFE3FD5A2C81402F00A4B9EC = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = DFE3FD3A2C81402E00A4B9EC;
+					};
+				};
+			};
+			buildConfigurationList = DFE3FD362C81402E00A4B9EC /* Build configuration list for PBXProject "Cora" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFE3FD322C81402E00A4B9EC;
+			productRefGroup = DFE3FD3C2C81402E00A4B9EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFE3FD3A2C81402E00A4B9EC /* Cora */,
+				DFE3FD502C81402F00A4B9EC /* CoraTests */,
+				DFE3FD5A2C81402F00A4B9EC /* CoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFE3FD392C81402E00A4B9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE3FD482C81402F00A4B9EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3FD4F2C81402F00A4B9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3FD592C81402F00A4B9EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFE3FD372C81402E00A4B9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE3FD3F2C81402E00A4B9EC /* AppDelegate.swift in Sources */,
+				DFE3FD412C81402E00A4B9EC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3FD4D2C81402F00A4B9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE3FD562C81402F00A4B9EC /* CoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFE3FD572C81402F00A4B9EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFE3FD602C81402F00A4B9EC /* CoraUITests.swift in Sources */,
+				DFE3FD622C81402F00A4B9EC /* CoraUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFE3FD532C81402F00A4B9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE3FD3A2C81402E00A4B9EC /* Cora */;
+			targetProxy = DFE3FD522C81402F00A4B9EC /* PBXContainerItemProxy */;
+		};
+		DFE3FD5D2C81402F00A4B9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFE3FD3A2C81402E00A4B9EC /* Cora */;
+			targetProxy = DFE3FD5C2C81402F00A4B9EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFE3FD9A2C8148EA00A4B9EC /* HML */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB32C814DB500A4B9EC /* HML.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = HML;
+		};
+		DFE3FD9B2C8148EA00A4B9EC /* HML */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB32C814DB500A4B9EC /* HML.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iconHML;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.Cora.hml;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = HML;
+		};
+		DFE3FD9C2C8148EA00A4B9EC /* HML */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB32C814DB500A4B9EC /* HML.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.CoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cora.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cora";
+			};
+			name = HML;
+		};
+		DFE3FD9D2C8148EA00A4B9EC /* HML */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB32C814DB500A4B9EC /* HML.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.CoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cora;
+			};
+			name = HML;
+		};
+		DFE3FDA92C814BEC00A4B9EC /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDAE2C814C4C00A4B9EC /* DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DEV;
+		};
+		DFE3FDAA2C814BEC00A4B9EC /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDAE2C814C4C00A4B9EC /* DEV.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iconDEV;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.Cora.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DEV;
+		};
+		DFE3FDAB2C814BEC00A4B9EC /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDAE2C814C4C00A4B9EC /* DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.CoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cora.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cora";
+			};
+			name = DEV;
+		};
+		DFE3FDAC2C814BEC00A4B9EC /* DEV */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDAE2C814C4C00A4B9EC /* DEV.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.CoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cora;
+			};
+			name = DEV;
+		};
+		DFE3FDAF2C814DA000A4B9EC /* PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB42C814DC000A4B9EC /* PROD.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = PROD;
+		};
+		DFE3FDB02C814DA000A4B9EC /* PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB42C814DC000A4B9EC /* PROD.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = iconPROD;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.Cora.prod;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = PROD;
+		};
+		DFE3FDB12C814DA000A4B9EC /* PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB42C814DC000A4B9EC /* PROD.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.CoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cora.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cora";
+			};
+			name = PROD;
+		};
+		DFE3FDB22C814DA000A4B9EC /* PROD */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE3FDB42C814DC000A4B9EC /* PROD.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JS3V8Q5K4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.CoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cora;
+			};
+			name = PROD;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFE3FD362C81402E00A4B9EC /* Build configuration list for PBXProject "Cora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE3FDA92C814BEC00A4B9EC /* DEV */,
+				DFE3FD9A2C8148EA00A4B9EC /* HML */,
+				DFE3FDAF2C814DA000A4B9EC /* PROD */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DEV;
+		};
+		DFE3FD652C81402F00A4B9EC /* Build configuration list for PBXNativeTarget "Cora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE3FDAA2C814BEC00A4B9EC /* DEV */,
+				DFE3FD9B2C8148EA00A4B9EC /* HML */,
+				DFE3FDB02C814DA000A4B9EC /* PROD */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DEV;
+		};
+		DFE3FD682C81402F00A4B9EC /* Build configuration list for PBXNativeTarget "CoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE3FDAB2C814BEC00A4B9EC /* DEV */,
+				DFE3FD9C2C8148EA00A4B9EC /* HML */,
+				DFE3FDB12C814DA000A4B9EC /* PROD */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DEV;
+		};
+		DFE3FD6B2C81402F00A4B9EC /* Build configuration list for PBXNativeTarget "CoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFE3FDAC2C814BEC00A4B9EC /* DEV */,
+				DFE3FD9D2C8148EA00A4B9EC /* HML */,
+				DFE3FDB22C814DA000A4B9EC /* PROD */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = DEV;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFE3FD332C81402E00A4B9EC /* Project object */;
+}

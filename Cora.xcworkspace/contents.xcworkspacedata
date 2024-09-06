@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Extensions/Extensions.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DesignSystem/DesignSystem.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Statements/Statements.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Storage/Storage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Commons/Commons.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Coordinator/Coordinator.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Login/Login.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:EnvironmentHelper/EnvironmentHelper.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Networking/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cora.xcodeproj">
+   </FileRef>
+</Workspace>
