@@ -1,4 +1,5 @@
 # Desafio iOS, Cora
+ - iOS 16+
 ## Características do aplicativo
  - UIKit (ViewCode)
  - SwiftUI
@@ -6,6 +7,33 @@
  - MVVM-C
  - Testes unitários
  - XCTest
+
+## Ambientes
+O app possui 3 ambientes, DEV, HML e PROD
+<br>
+<br>
+
+<img width="295" alt="Captura de Tela 2024-09-06 às 15 37 46" src="https://github.com/user-attachments/assets/db8583ba-b352-49ac-a765-9959ca32e1fa">
+<br>
+<br>
+
+para o app conseguir buildar, é importante que sejam adicionados os arquivos de configurações para os ambientes, entre no modulo `Cora` e crie uma pasta chamada `Config`, exemplo:
+<br>
+
+
+![Captura de Tela 2024-09-06 às 15 42 36](https://github.com/user-attachments/assets/7608cd77-d20f-4027-8d55-d4ac2755e51c)
+
+<br>
+
+Crie um arquivo `XCConfig` para cada ambiente, dentro de cada arquivo adicione a baseURL e a apiKey, como mostrado abaixo:
+<br>
+<br>
+![Captura de Tela 2024-09-06 às 15 45 34](https://github.com/user-attachments/assets/2acb6be6-36b7-42a5-a4fc-1238717e2bb0)
+<br>
+Depois disso, escolha o ambiente e rode o build
+
+![Captura de Tela 2024-09-06 às 15 47 45](https://github.com/user-attachments/assets/8eccb523-3ce9-4af8-9209-bd6ea01bd58d)
+
 
 ## Pattern de apresentação e organização do modulo
 O aplicativo utiliza o padrão de arquitetura MVVM-C (Model-View-ViewModel-Coordinator) nos módulos de interface para uma organização clara e desacoplada da lógica de apresentação. No padrão MVVM-C, o Model é responsável pela disposição dos dados, o ViewModel administra os useCases, e a View é responsável pela interface do usuário e a interação. O Coordinator é usado para gerenciar a navegação e o fluxo de telas de maneira centralizada, separando as responsabilidades de roteamento e evitando que as ViewControllers conheçam detalhes de navegação.
