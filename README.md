@@ -7,6 +7,9 @@
  - MVVM-C
  - Testes unitários
  - XCTest
+## Demo
+
+https://github.com/user-attachments/assets/680ea9a0-faa8-457b-8608-9af7b60c90e9
 
 ## Ambientes
 O app possui 3 ambientes, DEV, HML e PROD
