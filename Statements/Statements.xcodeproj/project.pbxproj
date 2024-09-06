@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFE300082C8B431700A4B9EC /* StatementsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE300072C8B431700A4B9EC /* StatementsViewModelTests.swift */; };
+		DFE3000B2C8B504100A4B9EC /* StatementUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3000A2C8B504100A4B9EC /* StatementUseCaseMock.swift */; };
+		DFE3000D2C8B505300A4B9EC /* StatementsCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3000C2C8B505300A4B9EC /* StatementsCoordinatorSpy.swift */; };
+		DFE3000F2C8B506400A4B9EC /* StatementsViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3000E2C8B506400A4B9EC /* StatementsViewControllerSpy.swift */; };
+		DFE300112C8B512A00A4B9EC /* StatementsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE300102C8B512A00A4B9EC /* StatementsViewModelTests.swift */; };
+		DFE300172C8B67A300A4B9EC /* StatementDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE300162C8B67A300A4B9EC /* StatementDetailsViewModelTests.swift */; };
+		DFE300192C8B689600A4B9EC /* StatementDetailsUseCasesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE300182C8B689600A4B9EC /* StatementDetailsUseCasesMock.swift */; };
+		DFE3001B2C8B68A200A4B9EC /* StatementDetailViewControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3001A2C8B68A200A4B9EC /* StatementDetailViewControllerSpy.swift */; };
+		DFE3001E2C8B6EB600A4B9EC /* StatementDetailsFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3001D2C8B6EB600A4B9EC /* StatementDetailsFactoryTests.swift */; };
 		DFE3FF002C8361F900A4B9EC /* Statements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FEF72C8361F900A4B9EC /* Statements.framework */; };
 		DFE3FF102C83622100A4B9EC /* StatementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FF0F2C83622100A4B9EC /* StatementsViewController.swift */; };
 		DFE3FF1E2C836D0C00A4B9EC /* StatementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FF1D2C836D0C00A4B9EC /* StatementsViewModel.swift */; };
@@ -89,7 +96,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DFE300072C8B431700A4B9EC /* StatementsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewModelTests.swift; sourceTree = "<group>"; };
+		DFE3000A2C8B504100A4B9EC /* StatementUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementUseCaseMock.swift; sourceTree = "<group>"; };
+		DFE3000C2C8B505300A4B9EC /* StatementsCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsCoordinatorSpy.swift; sourceTree = "<group>"; };
+		DFE3000E2C8B506400A4B9EC /* StatementsViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewControllerSpy.swift; sourceTree = "<group>"; };
+		DFE300102C8B512A00A4B9EC /* StatementsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewModelTests.swift; sourceTree = "<group>"; };
+		DFE300122C8B525300A4B9EC /* StatementsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StatementsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFE300162C8B67A300A4B9EC /* StatementDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		DFE300182C8B689600A4B9EC /* StatementDetailsUseCasesMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailsUseCasesMock.swift; sourceTree = "<group>"; };
+		DFE3001A2C8B68A200A4B9EC /* StatementDetailViewControllerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailViewControllerSpy.swift; sourceTree = "<group>"; };
+		DFE3001D2C8B6EB600A4B9EC /* StatementDetailsFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDetailsFactoryTests.swift; sourceTree = "<group>"; };
 		DFE3FEF72C8361F900A4B9EC /* Statements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Statements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE3FEFF2C8361F900A4B9EC /* StatementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE3FF0F2C83622100A4B9EC /* StatementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementsViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +178,7 @@
 		DFE300042C8B42E800A4B9EC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DFE300142C8B676100A4B9EC /* Details */,
 				DFE300052C8B42F000A4B9EC /* List */,
 			);
 			path = Presentation;
@@ -171,9 +187,48 @@
 		DFE300052C8B42F000A4B9EC /* List */ = {
 			isa = PBXGroup;
 			children = (
-				DFE300072C8B431700A4B9EC /* StatementsViewModelTests.swift */,
+				DFE300092C8B500900A4B9EC /* ViewModel */,
+				DFE300122C8B525300A4B9EC /* StatementsTests-Bridging-Header.h */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		DFE300092C8B500900A4B9EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3000A2C8B504100A4B9EC /* StatementUseCaseMock.swift */,
+				DFE3000C2C8B505300A4B9EC /* StatementsCoordinatorSpy.swift */,
+				DFE3000E2C8B506400A4B9EC /* StatementsViewControllerSpy.swift */,
+				DFE300102C8B512A00A4B9EC /* StatementsViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DFE300142C8B676100A4B9EC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3001C2C8B6E8300A4B9EC /* Factory */,
+				DFE300152C8B676800A4B9EC /* ViewModel */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		DFE300152C8B676800A4B9EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DFE300162C8B67A300A4B9EC /* StatementDetailsViewModelTests.swift */,
+				DFE300182C8B689600A4B9EC /* StatementDetailsUseCasesMock.swift */,
+				DFE3001A2C8B68A200A4B9EC /* StatementDetailViewControllerSpy.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DFE3001C2C8B6E8300A4B9EC /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3001D2C8B6EB600A4B9EC /* StatementDetailsFactoryTests.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		DFE3FEED2C8361F900A4B9EC = {
@@ -568,7 +623,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE300082C8B431700A4B9EC /* StatementsViewModelTests.swift in Sources */,
+				DFE300112C8B512A00A4B9EC /* StatementsViewModelTests.swift in Sources */,
+				DFE3001B2C8B68A200A4B9EC /* StatementDetailViewControllerSpy.swift in Sources */,
+				DFE3000D2C8B505300A4B9EC /* StatementsCoordinatorSpy.swift in Sources */,
+				DFE300172C8B67A300A4B9EC /* StatementDetailsViewModelTests.swift in Sources */,
+				DFE3000F2C8B506400A4B9EC /* StatementsViewControllerSpy.swift in Sources */,
+				DFE300192C8B689600A4B9EC /* StatementDetailsUseCasesMock.swift in Sources */,
+				DFE3000B2C8B504100A4B9EC /* StatementUseCaseMock.swift in Sources */,
+				DFE3001E2C8B6EB600A4B9EC /* StatementDetailsFactoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@
       location = "group:EnvironmentHelper/EnvironmentHelper.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../Networking/Networking.xcodeproj">
+      location = "group:Networking/Networking.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Cora.xcodeproj">

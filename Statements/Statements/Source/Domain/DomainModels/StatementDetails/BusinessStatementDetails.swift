@@ -14,4 +14,13 @@ public struct BusinessStatementDetails {
     public let dateEvent: String
     public let recipient: BusinessPaymentDetail
     public let sender: BusinessPaymentDetail
+    
+    public init(description: String, label: String, amount: String, dateEvent: String, recipient: BusinessPaymentDetail, sender: BusinessPaymentDetail) {
+        self.description = description
+        self.label = label
+        self.amount = amount
+        self.dateEvent = dateEvent
+        self.recipient = recipient
+        self.sender = sender
+    }
 }

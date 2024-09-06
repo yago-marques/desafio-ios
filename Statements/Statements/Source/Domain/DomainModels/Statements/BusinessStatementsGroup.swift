@@ -9,5 +9,9 @@ import Foundation
 
 public struct BusinessStatementsGroup {
     public let group: [BusinessStatements]
+    
+    public init(group: [BusinessStatements]) {
+        self.group = group
+    }
 }
 

@@ -20,11 +20,11 @@ public protocol StatementsViewModeling: AnyObject {
 
 public final class StatementsViewModel: StatementsViewModeling {
     public var presentedStatements: BusinessStatementsGroup?
-    private var statements: BusinessStatementsGroup?
+    public var statements: BusinessStatementsGroup?
     
     private let useCases: StatementViewModelUseCases
     private let coordinator: StatementsCoordinating
-    weak var viewController: StatementsViewControllerDisplay?
+    public weak var viewController: StatementsViewControllerDisplay?
     
     public init(useCases: StatementViewModelUseCases, coordinator: StatementsCoordinating) {
         self.useCases = useCases

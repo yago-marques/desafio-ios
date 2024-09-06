@@ -10,7 +10,7 @@ import UIKit
 import Networking
 import Extensions
 
-protocol StatementsViewControllerDisplay: AnyObject {
+public protocol StatementsViewControllerDisplay: AnyObject {
     func showSkeleton()
     func hideSkeleton()
     func reloadTable()
@@ -182,33 +182,33 @@ extension StatementsViewController: StatementFilterViewDelegate {
 }
 
 extension StatementsViewController: StatementsViewControllerDisplay {
-    func showErrorAlert() {
+    public func showErrorAlert() {
         DispatchQueue.main.async {
             self.showAlert(title: "Aconteceu um erro", description: "Tente novamente mais tarde")
         }
     }
     
-    func showSkeleton() {
+    public func showSkeleton() {
         DispatchQueue.main.async {
             self.skeletonView.isHidden = false
             self.tableView.isHidden = true
         }
     }
     
-    func hideSkeleton() {
+    public func hideSkeleton() {
         DispatchQueue.main.async {
             self.skeletonView.isHidden = true
             self.tableView.isHidden = false
         }
     }
     
-    func reloadTable() {
+    public func reloadTable() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
     
-    func setFilterToAll() {
+    public func setFilterToAll() {
         DispatchQueue.main.async {
             self.filterView.allOptionTapped()
         }

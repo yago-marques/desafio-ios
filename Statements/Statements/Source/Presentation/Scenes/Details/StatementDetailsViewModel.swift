@@ -17,7 +17,7 @@ public final class StatementDetailsViewModel: StatementDetailsViewModeling {
     
     private let statementID: String
     private let useCases: StatementDetailsViewModelUseCases
-    weak var viewController: StatementDetailsViewControllerDisplay?
+    public weak var viewController: StatementDetailsViewControllerDisplay?
     
     public init(useCases: StatementDetailsViewModelUseCases, statementID: String) {
         self.useCases = useCases
@@ -34,7 +34,7 @@ public final class StatementDetailsViewModel: StatementDetailsViewModeling {
                     self.viewController?.hideSkeleton()
                 case .failure(_):
                     self.viewController?.hideSkeleton()
-                    // error
+                    self.viewController?.showErrorAlert()
                 }
             }
     }

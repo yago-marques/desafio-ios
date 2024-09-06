@@ -7,113 +7,153 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DFE3FDCB2C81550500A4B9EC /* EnvironmentHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FDC22C81550500A4B9EC /* EnvironmentHelper.framework */; };
-		DFE3FDD02C81550500A4B9EC /* EnvironmentHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FDCF2C81550500A4B9EC /* EnvironmentHelperTests.swift */; };
-		DFE3FDDB2C81551B00A4B9EC /* EnvironmentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FDDA2C81551B00A4B9EC /* EnvironmentHelper.swift */; };
-		DFE3FDDD2C815AFB00A4B9EC /* EnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FDDC2C815AFB00A4B9EC /* EnvironmentKey.swift */; };
+		DFE300202C8B6FD300A4B9EC /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3001F2C8B6FD300A4B9EC /* MockURLSession.swift */; };
+		DFE3FD812C81418700A4B9EC /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FD782C81418700A4B9EC /* Networking.framework */; };
+		DFE3FD862C81418700A4B9EC /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FD852C81418700A4B9EC /* NetworkingTests.swift */; };
+		DFE3FDE52C815C4800A4B9EC /* EnvironmentHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FDE42C815C4800A4B9EC /* EnvironmentHelper.framework */; };
+		DFE3FDE62C815C4800A4B9EC /* EnvironmentHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FDE42C815C4800A4B9EC /* EnvironmentHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FEC02C82578300A4B9EC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FEBF2C82578300A4B9EC /* Log.swift */; };
+		DFE3FEC22C8257C200A4B9EC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FEC12C8257C200A4B9EC /* Endpoint.swift */; };
+		DFE3FEC42C8257F300A4B9EC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FEC32C8257F300A4B9EC /* Network.swift */; };
+		DFE3FEC62C82581A00A4B9EC /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FEC52C82581A00A4B9EC /* Response.swift */; };
+		DFE3FF362C838BE400A4B9EC /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FF352C838BE400A4B9EC /* Storage.framework */; };
+		DFE3FF372C838BE400A4B9EC /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FF352C838BE400A4B9EC /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFE3FF392C838D8900A4B9EC /* RefreshTokenService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FF382C838D8900A4B9EC /* RefreshTokenService.swift */; };
+		DFE3FF3C2C838DE700A4B9EC /* RefreshTokenEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FF3B2C838DE700A4B9EC /* RefreshTokenEndpoint.swift */; };
+		DFE3FF3E2C838F0100A4B9EC /* RefreshTokenPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FF3D2C838F0100A4B9EC /* RefreshTokenPayload.swift */; };
+		DFE3FF402C838F7800A4B9EC /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FF3F2C838F7800A4B9EC /* Commons.framework */; };
+		DFE3FF412C838F7800A4B9EC /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3FF3F2C838F7800A4B9EC /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DFE300262C8B717000A4B9EC /* PBXContainerItemProxy */ = {
+		DFE3FD822C81418700A4B9EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DFE300212C8B717000A4B9EC /* Networking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DFE3FD782C81418700A4B9EC;
-			remoteInfo = Networking;
-		};
-		DFE300282C8B717000A4B9EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFE300212C8B717000A4B9EC /* Networking.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DFE3FD802C81418700A4B9EC;
-			remoteInfo = NetworkingTests;
-		};
-		DFE3FDCC2C81550500A4B9EC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DFE3FDB92C81550500A4B9EC /* Project object */;
+			containerPortal = DFE3FD6F2C81418700A4B9EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DFE3FDC12C81550500A4B9EC;
-			remoteInfo = EnvironmentHelper;
+			remoteGlobalIDString = DFE3FD772C81418700A4B9EC;
+			remoteInfo = Networking;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DFE3FDE72C815C4800A4B9EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DFE3FF372C838BE400A4B9EC /* Storage.framework in Embed Frameworks */,
+				DFE3FDE62C815C4800A4B9EC /* EnvironmentHelper.framework in Embed Frameworks */,
+				DFE3FF412C838F7800A4B9EC /* Commons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DFE300212C8B717000A4B9EC /* Networking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Networking.xcodeproj; path = ../Networking/Networking.xcodeproj; sourceTree = "<group>"; };
-		DFE3FDC22C81550500A4B9EC /* EnvironmentHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EnvironmentHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFE3FDCA2C81550500A4B9EC /* EnvironmentHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFE3FDCF2C81550500A4B9EC /* EnvironmentHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentHelperTests.swift; sourceTree = "<group>"; };
-		DFE3FDDA2C81551B00A4B9EC /* EnvironmentHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentHelper.swift; sourceTree = "<group>"; };
-		DFE3FDDC2C815AFB00A4B9EC /* EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKey.swift; sourceTree = "<group>"; };
+		DFE3001F2C8B6FD300A4B9EC /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		DFE3FD782C81418700A4B9EC /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FD802C81418700A4B9EC /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FD852C81418700A4B9EC /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		DFE3FDE42C815C4800A4B9EC /* EnvironmentHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EnvironmentHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FEBF2C82578300A4B9EC /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		DFE3FEC12C8257C200A4B9EC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		DFE3FEC32C8257F300A4B9EC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DFE3FEC52C82581A00A4B9EC /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		DFE3FF352C838BE400A4B9EC /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3FF382C838D8900A4B9EC /* RefreshTokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenService.swift; sourceTree = "<group>"; };
+		DFE3FF3B2C838DE700A4B9EC /* RefreshTokenEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenEndpoint.swift; sourceTree = "<group>"; };
+		DFE3FF3D2C838F0100A4B9EC /* RefreshTokenPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenPayload.swift; sourceTree = "<group>"; };
+		DFE3FF3F2C838F7800A4B9EC /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DFE3FDBF2C81550500A4B9EC /* Frameworks */ = {
+		DFE3FD752C81418700A4B9EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE3FF362C838BE400A4B9EC /* Storage.framework in Frameworks */,
+				DFE3FDE52C815C4800A4B9EC /* EnvironmentHelper.framework in Frameworks */,
+				DFE3FF402C838F7800A4B9EC /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFE3FDC72C81550500A4B9EC /* Frameworks */ = {
+		DFE3FD7D2C81418700A4B9EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE3FDCB2C81550500A4B9EC /* EnvironmentHelper.framework in Frameworks */,
+				DFE3FD812C81418700A4B9EC /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DFE300222C8B717000A4B9EC /* Products */ = {
+		DFE3FD6E2C81418700A4B9EC = {
 			isa = PBXGroup;
 			children = (
-				DFE300272C8B717000A4B9EC /* Networking.framework */,
-				DFE300292C8B717000A4B9EC /* NetworkingTests.xctest */,
+				DFE3FD7A2C81418700A4B9EC /* Networking */,
+				DFE3FD842C81418700A4B9EC /* NetworkingTests */,
+				DFE3FD792C81418700A4B9EC /* Products */,
+				DFE3FDE32C815C4800A4B9EC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DFE3FD792C81418700A4B9EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFE3FD782C81418700A4B9EC /* Networking.framework */,
+				DFE3FD802C81418700A4B9EC /* NetworkingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DFE3FDB82C81550500A4B9EC = {
+		DFE3FD7A2C81418700A4B9EC /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DFE300212C8B717000A4B9EC /* Networking.xcodeproj */,
-				DFE3FDC42C81550500A4B9EC /* EnvironmentHelper */,
-				DFE3FDCE2C81550500A4B9EC /* EnvironmentHelperTests */,
-				DFE3FDC32C81550500A4B9EC /* Products */,
+				DFE3FF3A2C838DCF00A4B9EC /* RefreshToken */,
+				DFE3FEBF2C82578300A4B9EC /* Log.swift */,
+				DFE3FEC12C8257C200A4B9EC /* Endpoint.swift */,
+				DFE3FEC32C8257F300A4B9EC /* Network.swift */,
+				DFE3FEC52C82581A00A4B9EC /* Response.swift */,
 			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
-		DFE3FDC32C81550500A4B9EC /* Products */ = {
+		DFE3FD842C81418700A4B9EC /* NetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				DFE3FDC22C81550500A4B9EC /* EnvironmentHelper.framework */,
-				DFE3FDCA2C81550500A4B9EC /* EnvironmentHelperTests.xctest */,
+				DFE3FD852C81418700A4B9EC /* NetworkingTests.swift */,
+				DFE3001F2C8B6FD300A4B9EC /* MockURLSession.swift */,
 			);
-			name = Products;
+			path = NetworkingTests;
 			sourceTree = "<group>";
 		};
-		DFE3FDC42C81550500A4B9EC /* EnvironmentHelper */ = {
+		DFE3FDE32C815C4800A4B9EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFE3FDDA2C81551B00A4B9EC /* EnvironmentHelper.swift */,
-				DFE3FDDC2C815AFB00A4B9EC /* EnvironmentKey.swift */,
+				DFE3FF3F2C838F7800A4B9EC /* Commons.framework */,
+				DFE3FF352C838BE400A4B9EC /* Storage.framework */,
+				DFE3FDE42C815C4800A4B9EC /* EnvironmentHelper.framework */,
 			);
-			path = EnvironmentHelper;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DFE3FDCE2C81550500A4B9EC /* EnvironmentHelperTests */ = {
+		DFE3FF3A2C838DCF00A4B9EC /* RefreshToken */ = {
 			isa = PBXGroup;
 			children = (
-				DFE3FDCF2C81550500A4B9EC /* EnvironmentHelperTests.swift */,
+				DFE3FF382C838D8900A4B9EC /* RefreshTokenService.swift */,
+				DFE3FF3B2C838DE700A4B9EC /* RefreshTokenEndpoint.swift */,
+				DFE3FF3D2C838F0100A4B9EC /* RefreshTokenPayload.swift */,
 			);
-			path = EnvironmentHelperTests;
+			path = RefreshToken;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DFE3FDBD2C81550500A4B9EC /* Headers */ = {
+		DFE3FD732C81418700A4B9EC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,62 +163,63 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DFE3FDC12C81550500A4B9EC /* EnvironmentHelper */ = {
+		DFE3FD772C81418700A4B9EC /* Networking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFE3FDD42C81550500A4B9EC /* Build configuration list for PBXNativeTarget "EnvironmentHelper" */;
+			buildConfigurationList = DFE3FD8A2C81418700A4B9EC /* Build configuration list for PBXNativeTarget "Networking" */;
 			buildPhases = (
-				DFE3FDBD2C81550500A4B9EC /* Headers */,
-				DFE3FDBE2C81550500A4B9EC /* Sources */,
-				DFE3FDBF2C81550500A4B9EC /* Frameworks */,
-				DFE3FDC02C81550500A4B9EC /* Resources */,
+				DFE3FD732C81418700A4B9EC /* Headers */,
+				DFE3FD742C81418700A4B9EC /* Sources */,
+				DFE3FD752C81418700A4B9EC /* Frameworks */,
+				DFE3FD762C81418700A4B9EC /* Resources */,
+				DFE3FDE72C815C4800A4B9EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = EnvironmentHelper;
-			productName = EnvironmentHelper;
-			productReference = DFE3FDC22C81550500A4B9EC /* EnvironmentHelper.framework */;
+			name = Networking;
+			productName = Networking;
+			productReference = DFE3FD782C81418700A4B9EC /* Networking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DFE3FDC92C81550500A4B9EC /* EnvironmentHelperTests */ = {
+		DFE3FD7F2C81418700A4B9EC /* NetworkingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DFE3FDD72C81550500A4B9EC /* Build configuration list for PBXNativeTarget "EnvironmentHelperTests" */;
+			buildConfigurationList = DFE3FD8D2C81418700A4B9EC /* Build configuration list for PBXNativeTarget "NetworkingTests" */;
 			buildPhases = (
-				DFE3FDC62C81550500A4B9EC /* Sources */,
-				DFE3FDC72C81550500A4B9EC /* Frameworks */,
-				DFE3FDC82C81550500A4B9EC /* Resources */,
+				DFE3FD7C2C81418700A4B9EC /* Sources */,
+				DFE3FD7D2C81418700A4B9EC /* Frameworks */,
+				DFE3FD7E2C81418700A4B9EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DFE3FDCD2C81550500A4B9EC /* PBXTargetDependency */,
+				DFE3FD832C81418700A4B9EC /* PBXTargetDependency */,
 			);
-			name = EnvironmentHelperTests;
-			productName = EnvironmentHelperTests;
-			productReference = DFE3FDCA2C81550500A4B9EC /* EnvironmentHelperTests.xctest */;
+			name = NetworkingTests;
+			productName = NetworkingTests;
+			productReference = DFE3FD802C81418700A4B9EC /* NetworkingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DFE3FDB92C81550500A4B9EC /* Project object */ = {
+		DFE3FD6F2C81418700A4B9EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					DFE3FDC12C81550500A4B9EC = {
+					DFE3FD772C81418700A4B9EC = {
 						CreatedOnToolsVersion = 15.2;
 						LastSwiftMigration = 1520;
 					};
-					DFE3FDC92C81550500A4B9EC = {
+					DFE3FD7F2C81418700A4B9EC = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = DFE3FDBC2C81550500A4B9EC /* Build configuration list for PBXProject "EnvironmentHelper" */;
+			buildConfigurationList = DFE3FD722C81418700A4B9EC /* Build configuration list for PBXProject "Networking" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -186,49 +227,26 @@
 				en,
 				Base,
 			);
-			mainGroup = DFE3FDB82C81550500A4B9EC;
-			productRefGroup = DFE3FDC32C81550500A4B9EC /* Products */;
+			mainGroup = DFE3FD6E2C81418700A4B9EC;
+			productRefGroup = DFE3FD792C81418700A4B9EC /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DFE300222C8B717000A4B9EC /* Products */;
-					ProjectRef = DFE300212C8B717000A4B9EC /* Networking.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				DFE3FDC12C81550500A4B9EC /* EnvironmentHelper */,
-				DFE3FDC92C81550500A4B9EC /* EnvironmentHelperTests */,
+				DFE3FD772C81418700A4B9EC /* Networking */,
+				DFE3FD7F2C81418700A4B9EC /* NetworkingTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		DFE300272C8B717000A4B9EC /* Networking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Networking.framework;
-			remoteRef = DFE300262C8B717000A4B9EC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DFE300292C8B717000A4B9EC /* NetworkingTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NetworkingTests.xctest;
-			remoteRef = DFE300282C8B717000A4B9EC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		DFE3FDC02C81550500A4B9EC /* Resources */ = {
+		DFE3FD762C81418700A4B9EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFE3FDC82C81550500A4B9EC /* Resources */ = {
+		DFE3FD7E2C81418700A4B9EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,35 +256,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DFE3FDBE2C81550500A4B9EC /* Sources */ = {
+		DFE3FD742C81418700A4B9EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE3FDDB2C81551B00A4B9EC /* EnvironmentHelper.swift in Sources */,
-				DFE3FDDD2C815AFB00A4B9EC /* EnvironmentKey.swift in Sources */,
+				DFE3FF3E2C838F0100A4B9EC /* RefreshTokenPayload.swift in Sources */,
+				DFE3FF3C2C838DE700A4B9EC /* RefreshTokenEndpoint.swift in Sources */,
+				DFE3FEC62C82581A00A4B9EC /* Response.swift in Sources */,
+				DFE3FF392C838D8900A4B9EC /* RefreshTokenService.swift in Sources */,
+				DFE3FEC02C82578300A4B9EC /* Log.swift in Sources */,
+				DFE3FEC22C8257C200A4B9EC /* Endpoint.swift in Sources */,
+				DFE3FEC42C8257F300A4B9EC /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DFE3FDC62C81550500A4B9EC /* Sources */ = {
+		DFE3FD7C2C81418700A4B9EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFE3FDD02C81550500A4B9EC /* EnvironmentHelperTests.swift in Sources */,
+				DFE300202C8B6FD300A4B9EC /* MockURLSession.swift in Sources */,
+				DFE3FD862C81418700A4B9EC /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DFE3FDCD2C81550500A4B9EC /* PBXTargetDependency */ = {
+		DFE3FD832C81418700A4B9EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DFE3FDC12C81550500A4B9EC /* EnvironmentHelper */;
-			targetProxy = DFE3FDCC2C81550500A4B9EC /* PBXContainerItemProxy */;
+			target = DFE3FD772C81418700A4B9EC /* Networking */;
+			targetProxy = DFE3FD822C81418700A4B9EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DFE3FDD22C81550500A4B9EC /* DEV */ = {
+		DFE3FD882C81418700A4B9EC /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -332,7 +356,7 @@
 			};
 			name = DEV;
 		};
-		DFE3FDD32C81550500A4B9EC /* HML */ = {
+		DFE3FD892C81418700A4B9EC /* HML */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -391,7 +415,7 @@
 			};
 			name = HML;
 		};
-		DFE3FDD52C81550500A4B9EC /* DEV */ = {
+		DFE3FD8B2C81418700A4B9EC /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -414,7 +438,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.EnvironmentHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -424,7 +448,7 @@
 			};
 			name = DEV;
 		};
-		DFE3FDD62C81550500A4B9EC /* HML */ = {
+		DFE3FD8C2C81418700A4B9EC /* HML */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -447,7 +471,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.EnvironmentHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -456,7 +480,7 @@
 			};
 			name = HML;
 		};
-		DFE3FDD82C81550500A4B9EC /* DEV */ = {
+		DFE3FD8E2C81418700A4B9EC /* DEV */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -465,7 +489,7 @@
 				DEVELOPMENT_TEAM = JS3V8Q5K4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.EnvironmentHelperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -473,7 +497,7 @@
 			};
 			name = DEV;
 		};
-		DFE3FDD92C81550500A4B9EC /* HML */ = {
+		DFE3FD8F2C81418700A4B9EC /* HML */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -482,7 +506,7 @@
 				DEVELOPMENT_TEAM = JS3V8Q5K4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.EnvironmentHelperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -490,7 +514,7 @@
 			};
 			name = HML;
 		};
-		DFE3FDDE2C815BF700A4B9EC /* PROD */ = {
+		DFE3FDB52C814DFB00A4B9EC /* PROD */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -556,7 +580,7 @@
 			};
 			name = PROD;
 		};
-		DFE3FDDF2C815BF700A4B9EC /* PROD */ = {
+		DFE3FDB62C814DFB00A4B9EC /* PROD */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -579,7 +603,7 @@
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.EnvironmentHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -589,7 +613,7 @@
 			};
 			name = PROD;
 		};
-		DFE3FDE02C815BF700A4B9EC /* PROD */ = {
+		DFE3FDB72C814DFB00A4B9EC /* PROD */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -598,7 +622,7 @@
 				DEVELOPMENT_TEAM = JS3V8Q5K4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.EnvironmentHelperTests;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.yago.NetworkingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -609,37 +633,37 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DFE3FDBC2C81550500A4B9EC /* Build configuration list for PBXProject "EnvironmentHelper" */ = {
+		DFE3FD722C81418700A4B9EC /* Build configuration list for PBXProject "Networking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFE3FDD22C81550500A4B9EC /* DEV */,
-				DFE3FDDE2C815BF700A4B9EC /* PROD */,
-				DFE3FDD32C81550500A4B9EC /* HML */,
+				DFE3FD882C81418700A4B9EC /* DEV */,
+				DFE3FDB52C814DFB00A4B9EC /* PROD */,
+				DFE3FD892C81418700A4B9EC /* HML */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = HML;
+			defaultConfigurationName = DEV;
 		};
-		DFE3FDD42C81550500A4B9EC /* Build configuration list for PBXNativeTarget "EnvironmentHelper" */ = {
+		DFE3FD8A2C81418700A4B9EC /* Build configuration list for PBXNativeTarget "Networking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFE3FDD52C81550500A4B9EC /* DEV */,
-				DFE3FDDF2C815BF700A4B9EC /* PROD */,
-				DFE3FDD62C81550500A4B9EC /* HML */,
+				DFE3FD8B2C81418700A4B9EC /* DEV */,
+				DFE3FDB62C814DFB00A4B9EC /* PROD */,
+				DFE3FD8C2C81418700A4B9EC /* HML */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = HML;
+			defaultConfigurationName = DEV;
 		};
-		DFE3FDD72C81550500A4B9EC /* Build configuration list for PBXNativeTarget "EnvironmentHelperTests" */ = {
+		DFE3FD8D2C81418700A4B9EC /* Build configuration list for PBXNativeTarget "NetworkingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFE3FDD82C81550500A4B9EC /* DEV */,
-				DFE3FDE02C815BF700A4B9EC /* PROD */,
-				DFE3FDD92C81550500A4B9EC /* HML */,
+				DFE3FD8E2C81418700A4B9EC /* DEV */,
+				DFE3FDB72C814DFB00A4B9EC /* PROD */,
+				DFE3FD8F2C81418700A4B9EC /* HML */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = HML;
+			defaultConfigurationName = DEV;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DFE3FDB92C81550500A4B9EC /* Project object */;
+	rootObject = DFE3FD6F2C81418700A4B9EC /* Project object */;
 }
