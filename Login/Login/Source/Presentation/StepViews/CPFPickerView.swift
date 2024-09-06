@@ -29,7 +29,7 @@ struct CPFPickerView: View {
             .foregroundStyle(.textFieldValue)
             .padding(.horizontal, 20)
             .focused($isTextFieldFocused)
-            .onChange(of: viewModel.cpf) { _, newValue in
+            .onChange(of: viewModel.cpf) { newValue in
                 viewModel.cpf = viewModel.formatCPF(newValue)
                 viewModel.cpfFieldValidator()
             }

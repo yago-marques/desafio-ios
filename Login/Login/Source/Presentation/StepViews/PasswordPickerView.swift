@@ -69,7 +69,7 @@ struct PasswordPickerView: View {
             .font(.title)
             .foregroundStyle(.textFieldValue)
             .focused($isTextFieldFocused)
-            .onChange(of: viewModel.password) { _, newValue in
+            .onChange(of: viewModel.password) { newValue in
                 viewModel.password = viewModel.formatPassword(newValue)
                 viewModel.passwordFieldValidator()
             }
@@ -94,7 +94,7 @@ struct PasswordPickerView: View {
             .font(.title)
             .foregroundStyle(.textFieldValue)
             .focused($isTextFieldFocused)
-            .onChange(of: viewModel.password) { _, newValue in
+            .onChange(of: viewModel.password) { newValue in
                 viewModel.password = viewModel.formatPassword(newValue)
                 viewModel.passwordFieldValidator()
             }
