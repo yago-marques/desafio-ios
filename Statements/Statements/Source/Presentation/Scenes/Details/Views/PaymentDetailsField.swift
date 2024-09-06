@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Extensions
 
 enum PaymentDetailsFieldType {
     case sender
@@ -109,7 +110,7 @@ public final class PaymentDetailsField: UIView {
     func configure(type: PaymentDetailsFieldType, with model: BusinessPaymentDetail) {
         typeLabel.text = type == .recipient ? "Para" : "De"
         nameLabel.text = model.name
-        documentLabel.text = "\(model.documentType.rawValue) \(model.documentNumber)"
+        documentLabel.text = "\(model.documentType.rawValue) \(model.documentType == .cnpj ? model.documentNumber.toCNPJ() : model.documentNumber.toCPF())"
         bankLabel.text = model.bankName
         bankInfoLabel.text = "Agência \(model.agencyNumber) - Conta \(model.accountNumber)"
     }

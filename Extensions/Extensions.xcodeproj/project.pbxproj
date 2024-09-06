@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DFE300012C8B41B200A4B9EC /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE300002C8B41B200A4B9EC /* Double+.swift */; };
 		DFE300032C8B425200A4B9EC /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE300022C8B425200A4B9EC /* UIViewController+.swift */; };
+		DFE3002D2C8B878700A4B9EC /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3002C2C8B878700A4B9EC /* String+.swift */; };
 		DFE3FFE82C89109700A4B9EC /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE3FFE72C89109700A4B9EC /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFE3FFF12C8910C600A4B9EC /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FFF02C8910C600A4B9EC /* View+.swift */; };
 		DFE3FFFC2C8B416000A4B9EC /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3FFFB2C8B416000A4B9EC /* Date+.swift */; };
@@ -17,6 +18,7 @@
 /* Begin PBXFileReference section */
 		DFE300002C8B41B200A4B9EC /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		DFE300022C8B425200A4B9EC /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		DFE3002C2C8B878700A4B9EC /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		DFE3FFE42C89109700A4B9EC /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE3FFE72C89109700A4B9EC /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		DFE3FFF02C8910C600A4B9EC /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				DFE3FFFB2C8B416000A4B9EC /* Date+.swift */,
 				DFE300002C8B41B200A4B9EC /* Double+.swift */,
 				DFE300022C8B425200A4B9EC /* UIViewController+.swift */,
+				DFE3002C2C8B878700A4B9EC /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				DFE3FFF12C8910C600A4B9EC /* View+.swift in Sources */,
 				DFE300012C8B41B200A4B9EC /* Double+.swift in Sources */,
+				DFE3002D2C8B878700A4B9EC /* String+.swift in Sources */,
 				DFE300032C8B425200A4B9EC /* UIViewController+.swift in Sources */,
 				DFE3FFFC2C8B416000A4B9EC /* Date+.swift in Sources */,
 			);
