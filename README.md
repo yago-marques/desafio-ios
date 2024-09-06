@@ -1,5 +1,7 @@
 # Desafio iOS, Cora
  - iOS 16+
+ - macOS 15.4
+   
 ## Características do aplicativo
  - UIKit (ViewCode)
  - SwiftUI
@@ -67,3 +69,11 @@ Este repositório contém um aplicativo iOS desenvolvido em um XCWorkspace que c
 
 <img src="https://github.com/user-attachments/assets/e39cb604-45ee-4fb6-af95-0f3289e5f741" width=500>
 
+## Melhorias
+aqui vai uma lista de coisas que tinha em mente, mas por conta do tempo, não consegui implementar
+- Internacionalizar o app por meio de localizables
+- fazer os testes de UI
+- melhorar o design system, adicionar cores, tokens e mais componentes
+
+## Agradecimentos
+Agradeço pela oportunidade de participar do processo seletivo da Cora, tenho uma adimiração imensa pela empresa e tudo que ela representa para o pequeno e médio empreendedor brasileiro, espero que gostem do trabalho, dediquei muito tempo e esforço para entregar algo que eu julgo bom :)
